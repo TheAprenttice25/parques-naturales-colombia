@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const parquesRouter = require('./routes/parques');
+const parquesRouter = require('../routes/parques');
 
 app.use(cors());
 app.use(express.json());
