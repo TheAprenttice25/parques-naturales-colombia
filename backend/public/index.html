@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Parques Naturales</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Parques Naturales de Colombia</h1>
+
+  <h2>Registrar nuevo parque</h2>
+<form id="parqueForm">
+  <input type="text" id="nombre" placeholder="Nombre del parque" required><br>
+  <input type="text" id="pais" placeholder="País" required><br>
+  <input type="text" id="municipio" placeholder="Municipio" required><br>
+  <input type="text" id="extension" placeholder="Extensión" required><br>
+  <input type="text" id="atracciones" placeholder="Atracciones separadas por coma" required><br>
+  <button type="submit">Agregar parque</button>
+</form>
+<hr>
+
+  <div id="parques"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
