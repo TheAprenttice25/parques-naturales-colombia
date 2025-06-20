@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Importar rutas
 const parqueRoutes = require('./routes/parques');
@@ -17,7 +17,7 @@ app.use('/api/parques', parqueRoutes);
 
 // Ruta comodín para frontend (React/HTML)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // Conectar a MongoDB
